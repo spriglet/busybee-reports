@@ -1,0 +1,27 @@
+module.exports = {// definition of the allowed query fields for each sitwatch table
+	sales: {
+
+		saleid: {
+			type: 'number'
+		},
+		to: {
+			type: 'date'
+		},
+		from: {
+			type: 'date'
+		}
+	},
+	employee: { 
+		empnumbers: {
+		type: 'number' 
+		},
+		emprole: {
+		enum: ['cashier', 'sales']
+		}
+	},
+	items:{
+		itemnumbers: {
+			type: 'number' 
+		  }	
+	}
+}  
