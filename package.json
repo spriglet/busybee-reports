@@ -21,7 +21,6 @@
     "mocha": "2.2.4"
   },
   "scripts": {
-    "check-credentials": "mocha part1.js",
     "test": "mocha test.js",
     "watch": "gulp watch"
   }

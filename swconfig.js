@@ -1,30 +1,36 @@
 module.exports = {// definition of the allowed query fields for each sitwatch table
 	sale: {
-	fieldtypes:{
-		saleid: {
-			type: 'number'
-		},
-		to: {
-			type: 'date'
-		},
-		from: {
-			type: 'date'
-		}
-	 },required:['to','from']
+		properties: {
+			saleid:{
+				type: 'number'
+			},
+			to: {
+				type: 'date'
+			},
+			from: {
+				type: 'date'
+			}
+		 },
+		 required:['to','from'],
+		 fields:['saleidfunc','sale.actualsaleid','sale.code',
+  			'statuscode','sale.total','sale.shift','sale.created','sale.modified']
 	},
 	employee: { 
-		fieldtypes:{
+		properties:{
 			empnumbers: {
 			type: 'number'
 			},
 			emprole: {
 			enum: ['cashier', 'sales']
 			}
-		}
+		},fields:['employee.name','employeerole.name']
 	},
 	items:{
-		itemnumbers: {
-			type: 'number' 
-		  }	
+		properties:{
+			itemnumbers:{
+				type: 'number' 
+			}	
+		} 
 	}
+
 }  
