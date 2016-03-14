@@ -1,39 +1,46 @@
 var config = require('./swconfig'); // sitewatch configuration file that maps the correct variables
-// creates the site watch rest api	
-function setupSiteWatch(app,url,schema,querystring,http,paths){
-    var entities = ['employee','site','customer','terminal'];
-    var data = ['facts','items'];
-    //var testa = ['reportcateogry','test'];
-    var mainpath = "sitewatch"
-    paths.addbranches(mainpath+'/sale',[entities]);
-    paths.addbranches(mainpath+'/sale',[entities,data]);
-    paths.chain(function(branch){
-        app.get(branch.toString(),function(req, res) {
+function SiteWatch(paths){
+  this.entities = ['employee','site','customer','terminal'];
+  this.data = ['facts','items'];
+  var mainpath = "sitewatch"
+  paths.addbranches(mainpath+'/sale',[this.entities]);
+  paths.addbranches(mainpath+'/sale',[this.entities,this.data]);
+  this.branches = paths.branches
+}
+// takes an array of schemas 
+SiteWatch.prototype.validaterequest = function(schemas,inputs,schema){
+  var relationship = schema.merge(Object.create(schemas),'object',false);
+  return schema.validate(relationship,inputs);
+
+}
+// sets up a sitewatch rest api
+SiteWatch.prototype.app = function(app,url,schema,querystring,http,paths){
+     
+    var validate = this.validaterequest;
+    this.branches.forEach(function(branch){
+        app.get(branch.toString(),function(req, res) {             
               var arr = branch.substr(("/sitewatch/").length).split('/');
               var pathschemas = arr.map(function(val){ return config[val]; });
-             
-              var relationship = schema.merge(Object.create(pathschemas),'object',false);
               var fields = config['sale'].fields.join(',')+','+config[arr[1]].fields.join(',')
               //delete relationship.fields;
-              
               var queryfields = url.parse(req.url,true).query; 
                            
-              var errors = schema.validate(relationship,queryfields);
+              var errors = validate(pathschemas,queryfields,schema);
                //res.send( relationship);
               if(!errors){
                 
                 var queryfields = _.extend(queryfields,{logdate:queryfields.to+'TO'+queryfields.from})
-                var swdata = {'entity':_.intersection(arr,entities),'data':_.intersection(arr,data),'fields':fields};
+                var swdata = {'entity':_.intersection(arr,this.entities),'data':_.intersection(arr,this.data),'fields':fields};
                 swdata = _.extend(swdata,queryfields); 
                 delete swdata['from'];
                 delete swdata['to'];
               /*
               http.get('http://50.240.52.173:5544/index.php?'+
                 querystring.stringify(swdata), 
-                function (response) {
+                function (response)
                 var finalData = "";
 
-                response.on("data", function (data) {
+                response.on("data", function (data)
                   finalData += data.toString();
                 });
                  response.on("end", function() {
@@ -50,4 +57,5 @@ function setupSiteWatch(app,url,schema,querystring,http,paths){
      });
      
 }
-module.exports = setupSiteWatch;
+
+module.exports =  SiteWatch;

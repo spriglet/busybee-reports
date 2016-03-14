@@ -15,6 +15,7 @@ Paths.prototype.chain = function (callback){
     	 callback(path);
     });
 }
+
 Paths.prototype.addbranches = function(main,branches){
    func = comb.cartesianProduct;
    var paths = dispatch(func, branches).toArray().map(function(arr) {  return '/'+main+'/'+arr.join('/');  });
