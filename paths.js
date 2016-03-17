@@ -9,13 +9,14 @@ function Paths(){
     this.branches = [];
 }
 // main is the main path and branches are the branches of the paths. 
-Paths.prototype.chain = function (callback){ 
-    
+Paths.prototype.chain = function (callback){    
     this.branches.forEach(function(path){ 
     	 callback(path);
     });
 }
-
+Paths.prototype.ispath = function(path){
+    return (-1!=this.branches.indexOf(path ));
+}
 Paths.prototype.addbranches = function(main,branches){
    func = comb.cartesianProduct;
    var paths = dispatch(func, branches).toArray().map(function(arr) {  return '/'+main+'/'+arr.join('/');  });

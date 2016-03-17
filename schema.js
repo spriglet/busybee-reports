@@ -15,14 +15,13 @@ exports.validate = function(sch,data){
 	return jjv.validate('schema',data);
 }
 // merges schemas together
-exports.merge = function(schemas,type,additionalproperties){
+exports.merge = function(schemas,type){
 		var properties = schemas.map(function(val){ return val.properties  });
-		var required = schemas.map(function(val){ return val.required });
-		
-		return {type:type.toString(),
+    var arr = schemas.map(function(val) { return val.required});
+		var required = arr.filter(function(val){ return val!=undefined; });
+		return {type:type,
 				  properties:dispatch(_.extend,properties),
 				  required:dispatch(_.extend,required),
-				  additionalProperties: additionalproperties
-		  	    }; 
+		 }; 
 }
 
