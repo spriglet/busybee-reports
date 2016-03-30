@@ -1,31 +1,21 @@
+GLOBAL._ = require('underscore');
 var gulp = require('gulp');
 var mocha = require('gulp-mocha');
 var assert = require('assert');
 var app = require('./server');
 var superagent = require('superagent');
 var wagner = require('wagner-core');
-var dependencies = require('./dependencies')(wagner);
-var url = require('url');
-var schema = require('./schema');
-GLOBAL._ = require('underscore');
+var REST = require('./controllers/REST');
+var schema = require('./controllers/schema');
 describe('SiteWatch',function(){
-
-  
-	var dep = wagner.invoke(function(SiteWatch){ return {SiteWatch:SiteWatch} });
-  var SiteWatch = dep.SiteWatch;
-  
-  it('Valid Url', function(done){
-    
-    assert.equal( SiteWatch.ispath('/sitewatch/sale/employee') ,true);
-    
-    
-    var errors = SiteWatch.validurl('/sitewatch/sale/employee?to=sf',url,schema);
-	  assert.equal(errors,true);
-    if(errors){
-       console.log(errors);
-    }
-  
-    
+   var sitewatch = new REST('./swconfig.js');  
+   var reqschema = sitewatch.getpathschemas('/sitewatch/sale/employee/items/rptcategory');
+   //var fields = reqschema[3].fields;
+  it('Valid Schema', function(done){
+    //  test
+    console.log(reqschema);
+    var test = 1;
+    assert.notEqual( reqschema[3].fields,undefined);
     done();
   });
 });

@@ -17,6 +17,10 @@ function SiteWatch(){
   });
   
 }
+function request(){
+  
+  
+}
 // Checks the path to make sure its a valid site watch path
 // Takes a path as a parasmte to validatd
 // takes an array of schemas 

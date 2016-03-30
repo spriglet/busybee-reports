@@ -13,7 +13,9 @@
     "underscore": "1.5.2",
     "wagner-core": "0.1.0",
     "jjv": "1.0.2",
-    "js-combinatorics":"0.5.0"
+    "js-combinatorics":"0.5.0",
+    "group-array": "0.3.0",
+    "jsonq": "1.0.3"
   },
   "devDependencies": {
     "gulp": "3.8.11",
