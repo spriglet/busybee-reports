@@ -21,6 +21,10 @@ function REST(configfile){
 REST.prototype.getpathdata = function(path){
     return config.RESTconfig.trees[path].paths;
 }
+REST.prototype.getpaths = function(){
+  return paths.branches;
+    
+};
 REST.prototype.validateschemaqrystr = function(testschema,urlstr){
   
     // Parse the query string to get the query vars 

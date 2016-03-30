@@ -9,12 +9,19 @@ var REST = require('./controllers/REST');
 var schema = require('./controllers/schema');
 describe('SiteWatch',function(){
    var sitewatch = new REST('./swconfig.js');  
-   var reqschema = sitewatch.getpathschemas('/sitewatch/sale/employee/items/rptcategory');
-   //var fields = reqschema[3].fields;
+ 
+  var path = '/sitewatch/sale/employee/items/items2/rptcategory';
+  it('Valid Path', function(done){
+    //  test
+    console.log(sitewatch.ispath(path));
+    assert.notEqual( sitewatch.ispath(path),false);
+    done();
+  });
+    var reqschema = sitewatch.getpathschemas(path);
+  //var fields = reqschema[3].fields;
   it('Valid Schema', function(done){
     //  test
     console.log(reqschema);
-    var test = 1;
     assert.notEqual( reqschema[3].fields,undefined);
     done();
   });

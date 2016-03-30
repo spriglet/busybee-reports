@@ -1,0 +1,60 @@
+<html>
+<head>
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+</head>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+  <h4>Employee Item: Michael Boyle </h4>
+  <h4>Sale Count {{salecount}}<h4>
+  <h4>To:{{startdate}} From:{{enddate}}
+   <table>
+   <tbody ng-repeat="rptcategory in rptcategories ">
+        <tr>
+          <td>{{rptcategory.name}}</td><td>Name</td><td>quantity</td><td>Amount</td>
+        </tr>
+        <tr ng-repeat="item in rptcategory.items">
+          <td>&nbsp;</td><td>{{item.name}}</td><td>{{item.quantity}}</td><td>{{item.amount | currency }}</td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<!-- http://stackoverflow.com/questions/19930014/how-to-add-values-dynamically-in-angularjs -->
+  <!--
+<div ng-app="myApp" ng-controller="myCtrl"> 
+  <table>
+    
+  
+   <tbody ng-repeat="(key, value) in rptcategories ">
+        <tr>
+          <td>{{key}}</td><td>Name</td><td>quantity</td><td>Amount</td>
+        </tr>
+        <tr ng-repeat="(itemname,items) in value">
+           
+          <td>&nbsp;</td><td>{{itemname}}</td><td>{{items.quantity.sum}}</td><td>{{item.amount | currency }}</td>
+        </tr>
+    </tbody>
+  </table>  
+  <h1>{{rptcategories}}</h1> 
+</div>
+-->
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+    $scope.item = '49500088';
+    $scope.startdate = '03/10/2016';
+    $scope.enddate = '03/17/2016'
+    $http.get("/sitewatch/sale/employee/items/items2/rptcategory?to="+$scope.startdate.toString()+"&from="+$scope.enddate.toString()+"&item2="+$scope.item.toString()+"&emprolename=Cashier")
+    .then(function(response) {
+       $scope.rptcategories = response.data.rptcategories;
+       $scope.salecount = response.data.salecount;
+       //$scope.rptcategories = response.data;
+       
+      
+    });
+});
+</script>
+
+  
+  

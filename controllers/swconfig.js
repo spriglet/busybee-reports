@@ -6,11 +6,11 @@ module.exports = {// definition of the allowed query fields for each sitwatch ta
      
       sale:{
           name:'sale',
-          branches:[['entities'],['entities','data'],['entities','data','data'],['data']] // different paths
+          branches:[['entities'],['entities','data'],['entities','data','data'],['entities','data','data','data'],['data']] // different paths
           ,
           paths:{
-              entities:['sale','employee','site','customer','terminal'],
-              data:['facts','items','rptcategory']
+              entities:['employee','site','customer','terminal'],
+              data:['facts','items','rptcategory','items2']
           }
       }
     }
@@ -46,8 +46,8 @@ module.exports = {// definition of the allowed query fields for each sitwatch ta
     },
     items:{
       properties:{
-        itemnumbers:{
-          type: 'number' 
+        item:{
+          type: 'string' 
         }
       },fields:['item.name','saleitems.val','saleitems.qty','saleitems.amt']
     }, rptcategory:{
@@ -58,11 +58,14 @@ module.exports = {// definition of the allowed query fields for each sitwatch ta
       },fields:['rptcategory.name']
     },items2:{
       properties:{
-        itemnumbers:{
-          type: 'number' 
-        }	
-      },fields:['item2.name'] 
-    },
+        itemn2:{
+          type: 'string' 
+        }	,
+        item2name:{
+          type: 'string'
+        }
+      },fields:['item2.name','saleitems2.val','saleitems2.qty','saleitems2.amt'] 
+    } 
   }
  
 }  

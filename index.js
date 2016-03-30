@@ -17,6 +17,7 @@ app.set('view engine', 'ejs');
 
 wagner.invoke(function(sitewatch_sale_employee){});
 wagner.invoke(function(sitewatch_sale_employee_items){});
+wagner.invoke(function(sitewatch_sale_items2_items){});
 app.get('/', function(request, response) {
       
 	response.write("Welcome");	
