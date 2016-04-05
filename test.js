@@ -20,7 +20,7 @@ describe('SiteWatch',function(){
     var reqschema = sitewatch.getpathschemas(path);
   //var fields = reqschema[3].fields;
   it('Valid Schema', function(done){
-    //  test
+    
     console.log(reqschema);
     assert.notEqual( reqschema[3].fields,undefined);
     done();
