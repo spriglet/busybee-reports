@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+p{width:40%;float:left;margin:3px;}
+
+ .wpcf7  {
+
+background-color: #fff;
+
+color: #000;
+
+width: 60%;
+
+}
+.maincontent {
+	width:50%;
+
+}
+</style>
+</head>
+
+<body>
+<div class="maincontent">
+<!--Site ID -->    	
+<p>Site
+<br> <span class="wpcf7-form-control-wrap">
+<select class="element select medium" id="site" name="site"> 
+					<option value="" selected="selected"></option>
+					<option value="1" >All Sites</option>
+					<option value="2" >JMK</option>
+					<option value="3" >JMJ</option>
+					<option value="4" >JMO</option>
+					<option value="5" >Office</option>
+
+</select>
+</span>		
+</p>
+<!--Sale ID -->    
+<p>Specific Sale ID
+<br>
+	<span class="wpcf7-form-control-wrap">	<input id="saleid" name="saleid" class="element text medium" type="text" maxlength="255" value=""/> 
+
+</p>
+
+<!--Show -->    
+<p>Show
+<br>
+	<span class="wpcf7-form-control-wrap">	
+			
+				<select class="element select medium" id="show" name="show"> 
+					<option value="" selected="selected"></option>
+					<option value="1" >All Sales</option>
+					<option value="2" >Just Paid Sales</option>
+					<option value="3" >Adjusted Sales</option>
+					<option value="4" >Incomplete Sales</option>
+					<option value="5" >ARM Recharge Sales</option>
+				</select>
+</span>			
+</p>
+<!--With Sales Roles-->
+<p>With Sales Role(s)
+<br>
+	<span class="wpcf7-form-control-wrap">		
+		<select class="element select medium" id="roles" name="roles"> 
+					<option value="" selected="selected"></option>
+					<option value="1" >All Sales Roles</option>
+
+		</select>
+		</span>	
+</p>
+<!--With-->
+<p>With
+<br>
+	<span class="p">		
+	<select class="element select medium" id="with" name="with"> 
+			<option value="" selected="selected"></option>
+			<option value="1" >Create Time</option>
+
+		</select>
+		</span>		
+</p>
+<!--Field-->
+<p>Having Employee Numbers
+<br>
+	<span class="wpcf7-form-control-wrap">		
+	<input id="empnumbers" name="empnumbers" class="element text medium" type="text" maxlength="255" value=""/> 	
+	</span>	
+</p>
+	
+<!--Field-->
+<p>Between
+<br>
+	<span class="wpcf7-form-control-wrap"/>		
+	<input type="text" name="between"/>
+	</span>		
+</p>
+<p>Accounts
+<br>
+	<span class="wpcf7-form-control-wrap">		
+	<input name="and" type="text">	
+	</span>	
+</p>
+<!--Field-->
+<p>And
+<br>
+<span class="wpcf7-form-control-wrap">	
+	<input name="and" type="text">
+	</span>	
+</p>
+
+
+<!-- -->
+<p>Matching
+<br>
+	<span class="wpcf7-form-control-wrap">	
+	<input id="matching" name="matching" class="element text medium" type="text" maxlength="255" value=""/> 
+</span>			
+</p>
+
+
+
+<p>Title
+<br>
+	<span class="wpcf7-form-control-wrap">		
+	<input name="and" type="text">	
+	</span>	
+</p>
+
+<p>Title
+<br>
+	<span class="wpcf7-form-control-wrap">		
+	<input name="and" type="text">	
+	</span>	
+</p>
+
+<p>Title
+<br>
+	<span class="wpcf7-form-control-wrap">		
+	<input name="and" type="text">	
+	</span>	
+</p>
+</div>
+
+</body>
+</html>

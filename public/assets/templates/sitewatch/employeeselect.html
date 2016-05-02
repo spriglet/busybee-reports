@@ -1,0 +1,3 @@
+<label for="employeeSelect"> Employee: </label>
+    <select name="employeeSelect" id="employeeSelect" ng-model="employee" ng-options="emp as emp.NAME for emp in employees" ng-change="update()">
+</select>

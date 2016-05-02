@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sale Viewer Filter Otions</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+<script type="text/javascript" src="calendar.js"></script>
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+		<h1><a>Sale Viewer Filter Otions</a></h1>
+		<form id="form_1050040" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>Sale Viewer Filter Otions</h2>
+			<p></p>
+		</div>						
+			<ul >
+			
+	    <li id="li_11" >
+			<label class="description" for="site">Site </label>
+			<div>
+			<select class="element select medium" id="site" name="site"> 
+					<option value="" selected="selected"></option>
+					<option value="1" >All Sites</option>
+					<option value="2" >JMK</option>
+					<option value="3" >JMJ</option>
+					<option value="4" >JMO</option>
+					<option value="5" >Office</option>
+
+			</select>
+			</div> 
+		</li>		
+		<li id="li_1" >
+		<label class="description" for="saleid">Specific Sale ID </label>
+			<div>
+				<input id="saleid" name="saleid" class="element text medium" type="text" maxlength="255" value=""/> 
+			</div> 
+		</li>		
+		<li id="li_12" >
+		<label class="description" for="show">Show </label>
+			<div>
+				<select class="element select medium" id="show" name="show"> 
+					<option value="" selected="selected"></option>
+					<option value="1" >All Sales</option>
+					<option value="2" >Just Paid Sales</option>
+					<option value="3" >Adjusted Sales</option>
+					<option value="4" >Incomplete Sales</option>
+					<option value="5" >ARM Recharge Sales</option>
+				</select>
+			</div> 
+		</li>		
+		<li id="li_14">
+		<label class="description" for="roles">With Sales Role(s) </label>
+			<div>
+				<select class="element select medium" id="roles" name="roles"> 
+					<option value="" selected="selected"></option>
+					<option value="1" >All Sales Roles</option>
+
+				</select>
+			</div> 
+		</li>		
+		<li id="li_13" >
+		<label class="description" for="element_13">With </label>
+		<div>
+		<select class="element select medium" id="with" name="with"> 
+			<option value="" selected="selected"></option>
+			<option value="1" >Create Time</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="empnumbers">Having Employee Numbers </label>
+			<div>
+				<input id="empnumbers" name="empnumbers" class="element text medium" type="text" maxlength="255" value=""/> 
+			</div> 
+		</li>		
+		<li id="li_2" >
+		<label class="description" for="sd">Between </label>
+		<div>
+				<input id="between" name="between" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</span>
+
+		 
+		</li>		
+		<li id="li_3" >
+		<label class="description" for="ed">And </label>
+		<div>
+				<input id="And" name="And" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		 
+		</li>		
+
+		<li id="li_8" >
+		<label class="description" for="custcode">Cust Code </label>
+		<div>
+			<input id="custcode" name="custcode" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		
+			<li id="li_15" >
+				<label class="description" for="chargetype">With Charge Types </label>
+			<div>
+		<select class="element select medium" id="chargetype" name="chargetype"> 
+			<option value="" selected="selected"></option>
+			<option value="1" >House Account Number,</option>
+			<option value="2" >Employee Chargend option</option>
+			<option value="3" >Credit Card number</option>
+		</select>
+		</div> 
+		</li>		
+
+		<li id="li_5" >
+		<label class="description" for="matching">Matching </label>
+			<div>
+				<input id="matching" name="matching" class="element text medium" type="text" maxlength="255" value=""/> 
+			</div> 
+		</li>		
+		<li id="li_6" >
+			<label class="description" for="prepaid">Prepaid number:  </label>
+			<div>
+				<input id="prepaid" name="prepaid" class="element text medium" type="text" maxlength="255" value=""/> 
+			</div> 
+		</li>		
+		<li id="li_16" >
+		<label class="description" for="findsales">Find sales with: </label>
+		<span>
+			<input id="element_16_1" name="findsales" class="element radio" type="radio" value="1" />
+			<label class="choice" for="element_16_1">Any</label>
+			<input id="element_16_2" name="fidnsales" class="element radio" type="radio" value="2" />
+			<label class="choice" for="element_16_2">All</label>
+		</span> 
+		</li>		<li id="li_17" >
+		<label class="description" for="element_17">Items: </label>
+		<div>
+		<select class="element select medium" id="element_17" name="element_17"> 
+			<option value="" selected="selected"></option>
+			<option value="1" >First option</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_7" >
+		<label class="description" for="items">Items Added </label>
+		<div>
+			<textarea id="items" name="items" class="element textarea medium"></textarea> 
+		</div> 
+		</li>		<li id="li_9" >
+		<label class="description" for="totalfrom">Total From </label>
+		<div>
+			<input id="element_9" name="element_9" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="totalfrom" id="totalfrom"></p> 
+		</li>		
+		<li id="li_10" >
+			<label class="totalthru" for="thru">Thru
+	   </label>
+		<div>
+			<input id="totalthru" name="totalthru" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		
+		<li id="li_18" >
+			<label class="description" for="terminal">Terminal(s) </label>
+			<span>
+				<input id="termianl" name="terminal" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="element_18_1">First option</label>
+				<input id="element_18_2" name="element_18_2" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="element_18_2">Second option</label>
+				<input id="element_18_3" name="element_18_3" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="element_18_3">Third option</label>
+			</span> 
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="1050040" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+		<div id="footer">
+			Generated by <a href="http://www.phpform.org">pForm</a>
+		</div>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>

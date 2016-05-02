@@ -13,7 +13,7 @@
           <td>{{rptcategory.name}}</td><td>Name</td><td>quantity</td><td>Amount</td>
         </tr>
         <tr ng-repeat="item in rptcategory.items">
-          <td>&nbsp;</td><td>{{item.name}}</td><td>{{item.quantity}}</td><td>{{item.amount | currency }}</td>
+          <td>&nbsp;</td><td>{{item.employee_items.name}}</td><td>{{item.employee_items.quantity}}</td><td>{{item.amount | currency }}</td>
         </tr>
     </tbody>
   </table>

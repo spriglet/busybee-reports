@@ -1,0 +1,21 @@
+<div id="employee_item_reports" ng-show='showReport'>
+<h4>Employee Number: {{empnumber}} </h4>
+<h4>Sale Count {{salecount}}<h4>
+<h4>To:{{startdate | date:'MM/dd/yyyy'}} From:{{enddate | date:'MM/dd/yyyy'}}</h4>
+<input type="image" src="assets/img/csv-icon.jpg" alt="Submit" export-to-csv>
+ <table border='1' style='md-primary'>
+ <tr><td>&nbsp;</td><td>Employee Sale Count:</td><td>{{ employee_items_salecount }}</td><td>&nbsp;</td><td>Item Sale Count :  </td><td>{{item_item_salecount}}</td>
+ <td>&nbsp;</td><td>Total</td>
+ </tr>
+ <tbody ng-repeat="rptcategory in rpt  ">
+      <tr>
+        <td>{{rptcategory.name}}</td><td>Name</td><td>quantity</td><td>Amount</td><td>Name</td><td>Quanity</td><td>Amount</td><td>Name</td><td>Quanity</td><td>Amount</td> 
+      </tr>
+      <tr ng-repeat="item in rptcategory.items">
+        <td>&nbsp;</td><td>{{item.name}}</td><td>{{item.employee_items.quantity}}</td><td>{{item.employee_items.amount | currency }}</td>
+        <td>{{item.name}}</td><td>{{item.item_items.quantity}}</td><td>{{item.item_items.amount | currency }}</td><td>{{item.name}}</td><td>{{item.employee_items.quantity + item.item_items.quantity }}</td>
+        <td>{{(item.employee_items.amount + item.item_items.amount)  | currency }}</td>
+      </tr>
+  </tbody>
+</table>
+</div>
