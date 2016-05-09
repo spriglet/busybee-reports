@@ -6,6 +6,7 @@ var url = require('url');
 var curl = require('./curl');
 var groupby = require('group-array');
 var jsonq = require('jsonq');
+var basic = require('./basic'); //basic functions for utilities ect..
 module.exports = function(wagner,app) {
   var sitewatch = new REST('./swconfig.js');
   var omit_rpt_cateogry = ['Exterior Wash SVC ','Package Services','Wash Notes','Non-Reported Items','XPT Cash Add/Remove', 
@@ -40,7 +41,7 @@ var prepswquery = function(branch,schemas,url,desiredfields){
   function querydata(urlstr){
       var queryfields = url.parse(urlstr,true).query;   
             //looks at the query fields
-       queryfields = _.extend(queryfields,{logdate:queryfields.to+'TO'+queryfields.from})
+       queryfields = _.extend(queryfields,{logdate:queryfields.to+'TO'+basic.dateAddDays(queryfields.from,1).toString()})
        return queryfields;
   }
   function buildschemafields(schemas){
@@ -132,7 +133,7 @@ var prepswquery = function(branch,schemas,url,desiredfields){
                       var obj = {'salecount':salecount ,'rptcategories':[]};
                       var family = jsonq(obj);
                       jsonq.each(test,function(key,val){
-                       if(omit_rpt_cateogry.indexOf(key)!=-1 ){
+                       if(omit_rpt_cateogry.indexOf(key)==-1 ){
                              var items = []                   
                              jsonq.each(val,function(k,v){
                                   var qty = 0;

@@ -3,7 +3,8 @@
 exports.employeeItems = function($http){
      
       var report_data = function(empcode,to,from,empitem){
-         var url = "/sitewatch/sale/employee/items/rptcategory?to="+  to+"&from="+ from+"&empnumber="+empcode.toString()+"&emprolename=Cashier";
+         
+        var url = "/sitewatch/sale/employee/items/rptcategory?to="+  to+"&from="+ from+"&empnumber="+empcode.toString()+"&emprolename=Cashier";
         return $http.get(url)
          .success(function(response) {
             return response;
