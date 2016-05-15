@@ -18,6 +18,8 @@
     "jsonq": "1.0.3",
     "ejs": "^1.0.0",
     "jquery": "2.2.3",
+    "mathjs": "*",
+    "object-merge": "2.5.1",
     "karma-sauce-launcher":"*"
   },
   "devDependencies": {

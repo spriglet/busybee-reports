@@ -21,6 +21,8 @@ wagner.invoke(function(sitewatch_sale_employee){});
 wagner.invoke(function(sitewatch_sale_employee_items){});
 wagner.invoke(function(sitewatch_sale_items2_items){});
 wagner.invoke(function(form_fields){});
+wagner.invoke(function(sitewatch_sale_employee_facts){});
+wagner.invoke(function(sitewatch_sale_item_facts){});
 app.get('/', function(request, response) {
       
 	response.write("Welcome");	

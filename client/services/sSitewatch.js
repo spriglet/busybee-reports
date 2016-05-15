@@ -52,3 +52,40 @@ exports.itemList = function($http){
             return {"status": false};
         });          
 }
+
+exports.saleEmployeeFacts = function($http){
+
+
+         var data =  function(empcode,to,from,fact){
+         
+                var url = "/sitewatch/sale/employee/facts?to="+to.toString()+"&from="+from.toString()+"&fact="+fact.toString()+"&factprofitcenter=0&emprolename=Cashier&empnumber="+empcode.toString();
+                return $http.get(url)
+                 .success(function(response) {
+                    return response;
+                }).error(function (data, status, headers, config) {
+                    return {"status": false};
+                });
+          }
+     
+     return {data:data};
+}
+
+
+exports.saleItemFacts =  function($http,$){
+         
+         
+        var data = function(item,to,from,fact){
+        var url = "/sitewatch/sale/items/facts?to="+  to+"&from="+ from+"&item="+item.toString()+"&factprofitcenter=0&fact="+fact.toString();
+        return $http.get(url)
+         .success(function(response) {
+            return response;
+        }).error(function (data, status, headers, config) {
+            return {"status": false};
+        });
+     
+        }
+        
+       
+        
+     return {data:data};
+}

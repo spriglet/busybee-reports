@@ -41,7 +41,7 @@ var prepswquery = function(branch,schemas,url,desiredfields){
   function querydata(urlstr){
       var queryfields = url.parse(urlstr,true).query;   
             //looks at the query fields
-       queryfields = _.extend(queryfields,{logdate:queryfields.to+'TO'+basic.dateAddDays(queryfields.from,1).toString()})
+       queryfields = _.extend(queryfields,{logdate:queryfields.to+'TO'+queryfields.from.toString()})
        return queryfields;
   }
   function buildschemafields(schemas){
@@ -93,6 +93,35 @@ var prepswquery = function(branch,schemas,url,desiredfields){
       } 
     
   }
+// Sale Fact Employees
+wagner.factory('sitewatch_sale_employee_facts',function(){ 
+        var path = '/sitewatch/sale/employee/facts';
+        app.get(path,function(req,res){
+               appget(path,req.url,['saleidfunc','fact.objid','fact.name','salefacts.data'], function(data,errors){
+                    if(!data==false){
+                      res.send(data);
+                     
+                     
+                    }else
+                      res.send(errors);
+               });  
+        });
+  });
+  // Sale Fact Items
+wagner.factory('sitewatch_sale_item_facts',function(){ 
+        var path = '/sitewatch/sale/items/facts';
+        app.get(path,function(req,res){
+               appget(path,req.url,['saleidfunc','fact.objid','fact.name','salefacts.data'], function(data,errors){
+                    if(!data==false){
+                      res.send(data);
+                     
+                     
+                    }else
+                      res.send(errors);
+               });  
+        });
+});
+  
   // Form fields from sitewatch, for example the employees and items ect 
   wagner.factory('form_fields',function(){ 
     
@@ -134,7 +163,7 @@ var prepswquery = function(branch,schemas,url,desiredfields){
                       var family = jsonq(obj);
                       jsonq.each(test,function(key,val){
                        if(omit_rpt_cateogry.indexOf(key)==-1 ){
-                             var items = []                   
+                             var items =[];
                              jsonq.each(val,function(k,v){
                                   var qty = 0;
                                   var amt = 0;
@@ -143,9 +172,9 @@ var prepswquery = function(branch,schemas,url,desiredfields){
                                       amt = amt + va.AMT;
                                      
                                   });
-                                  items.push({name:k,employee_items:{amount:amt,quantity:qty} }); 
+                                  items.push({items:{name:k,employee_items:{amount:amt,quantity:qty}} }); 
                              });
-                             family.find('rptcategories').append({name:key,items:items},false);
+                             family.find('rptcategories').append({report_category:key,items:items},false);
                         }
                       });
                      res.send(obj);
@@ -172,7 +201,7 @@ var prepswquery = function(branch,schemas,url,desiredfields){
                       var family = jsonq(obj);
                       jsonq.each(test,function(key,val){
                          if(omit_rpt_cateogry.indexOf(key)==-1 ){
-                             var items = []                   
+                             var items =[];                 
                              jsonq.each(val,function(k,v){
                                   var qty = 0;
                                   var amt = 0;
@@ -181,9 +210,9 @@ var prepswquery = function(branch,schemas,url,desiredfields){
                                       amt = amt + va.AMT;
                                      
                                   });
-                                  items.push({name:k,item_items:{amount:amt,quantity:qty} }); 
+                                   items.push({items:{name:k,item_items:{amount:amt,quantity:qty}} }); 
                              });
-                             family.find('rptcategories').append({name:key,items:items},false);
+                             family.find('rptcategories').append({report_category:key,items:items},false);
                          }
                       });
                      res.send(obj);

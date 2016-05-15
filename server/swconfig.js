@@ -15,7 +15,7 @@ module.exports = {// definition of the allowed query fields for each sitwatch ta
       },
       sale:{
           name:'sale',
-          branches:[['entities'],['entities','data'],['entities','data','data'],['entities','data','data','data'],['data']] // different paths
+          branches:[['entities'],['entities','data'],['entities','data','data'],['entities','data','data','data'],['data'],['data','data']] // different paths
           ,
           paths:{
               entities:['employee','site','customer','terminal'],
@@ -58,6 +58,8 @@ module.exports = {// definition of the allowed query fields for each sitwatch ta
       properties:{
         item:{
           type: 'string' 
+        },profitcenter:{
+          type: 'string'
         }
       },fields:['item.name','saleitems.val','saleitems.qty','saleitems.amt']
     }, rptcategory:{
@@ -66,7 +68,20 @@ module.exports = {// definition of the allowed query fields for each sitwatch ta
         type:'string'
       }
       },fields:['rptcategory.name']
-    },items2:{
+    },facts:{
+      properties:{
+        fact:{
+          type: 'string' 
+        }	,
+        name:{
+          type: 'string'
+        },factprofitcenter:{
+          type: 'string'
+        }
+      },fields:['fact.objid','fact.name','salefacts.data'] 
+    } ,
+    
+    items2:{
       properties:{
         itemn2:{
           type: 'string' 
