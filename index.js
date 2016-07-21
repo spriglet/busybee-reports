@@ -23,7 +23,7 @@ myApp.factory('itemFacts',services.sitewatch.saleItemFacts);
 
 // Controllers
 myApp.controller('MyController', controllers.sitewatch.reportTable);
-myApp.controller('employees', controllers.sitewatch.employee);
+myApp.controller('employees', controllers.sitewatch.employees);
 myApp.controller('AppCtrl', controllers.basic.dates );
 myApp.controller('AppCtrl',controllers.basic.progressBars)
 myApp.controller('AppCtrl',controllers.basic.dialogAlert)

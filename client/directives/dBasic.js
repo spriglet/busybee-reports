@@ -28,7 +28,7 @@ exports.exportToCsv = function($){
 	        		var rowData = table.rows[i].cells;
 	        		for(var j=0; j<rowData.length;j++){
 	        	
-	        			csvString = csvString + rowData[j].innerHTML + ",";
+	        			csvString = csvString +'"'+ rowData[j].innerHTML.toString().replace(/&nbsp;/g, '')+'"'+ ',';
 	        		}
 	        		csvString = csvString.substring(0,csvString.length - 1);
 	        		csvString = csvString + "\n";

@@ -1,3 +1,22 @@
+
+
+function rptcategoryindex(rptcat){
+     /*
+      This function is used to sort the rpt categories in the order specified by Busy bees IT department 
+     */
+     
+     var arr = ['Employee Codes', 'Exterior Washes','Free Washes','Extra Services','Wash Discounts','Interior Detail'
+                 ,'Exterior Detail','Detail Care Services','Detail Services','UWP Sold','Prepaid Sold','UWP Redeemed','UWP Discounts',
+                 ' ARM Plans Terminated','Prepaid Redeemed','Cash','Credit Card','Sale Taxes'];  // This is the array thats used for the indexing of the rptcategories
+     var count = arr.length;
+     if(arr.indexOf(rptcat.toString())!=-1)
+        return arr.indexOf(rptcat.toString());
+      else{
+        count = count +1;      
+        return count;
+      }
+}
+
 exports.reportTable = function($scope,$filter,employeeItems,itemItems,$mdDialog,employeeFacts,itemFacts,jsonFunc,merge,jsonq) {
    
    /*
@@ -50,12 +69,17 @@ exports.reportTable = function($scope,$filter,employeeItems,itemItems,$mdDialog,
                                         "item_items":items2.find("name",function(){ return this == item}).sibling("item_items").value()};
                               arr.push(t);
                          });
-                         
                         
                          
-                         test.find('rptcategories').append({report_category:val,items:arr   } ,false );
+                         test.find('rptcategories').append({rc_index:rptcategoryindex(val),report_category:val,items:arr   } ,false );
                         
                     });
+                    
+                    var sort = jsonq(report);  
+              
+                    sort.sort('rc_index');
+                  
+                    
                     $scope.rpt = report.rptcategories;
                 
                     $scope.showReport = true;
@@ -88,7 +112,7 @@ var findemployeeitem = function(empname,employeelist){
     return item_objid;
 }
 
-exports.employee = function($scope,employeeList,itemList){
+exports.employees = function($scope,employeeList,itemList){
     
    employeeList
     .then(function(response) {
