@@ -191,9 +191,10 @@ wagner.factory('sitewatch_sale_item_facts',function(){
         app.get(path,function(req,res){
            
                
-             appget(path,req.url,['saleidfunc','rptcategory.name','item.name','saleitems.qty','saleitems.amt'], function(data,errors){
+             appget(path,req.url,['distinct','saleidfunc','rptcategory.name','item.name','saleitems.qty','saleitems.amt'], function(data,errors){
                    //appget(path,req.url,['employee.name','employee.code'], function(data,errors){
-                    if(!data==false){
+                   
+                   if(!data==false){
                    
                       var salecount = Object.keys(groupby(JSON.parse(data),'OBJID')).length;
                       var test =groupby(JSON.parse(data),'NAME_01','NAME');
