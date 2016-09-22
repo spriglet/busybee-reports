@@ -39,8 +39,8 @@ module.exports = {// definition of the allowed query fields for each sitwatch ta
         }
        },
        required:['to','from'],
-       fields:['distinct','saleidfunc','sale.actualsaleid','sale.code',
-          'statuscode','sale.total','sale.shift','sale.created','sale.modified']
+       fields:['saleid','distinct','saleidfunc','sale.actualsaleid','sale.code',
+          'statuscode','sale.total','sale.shift','sale.created','sale.modified','statuscode','sale.actualsaleid']
     },
     employee: { 
       properties:{

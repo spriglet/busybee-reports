@@ -129,6 +129,7 @@ body
  width: 200px;
  height: 400px;
  overflow: auto;
+ font-size:10px;
 
 }
 #employee_report_form{

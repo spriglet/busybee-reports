@@ -14,3 +14,26 @@ module.exports.dateAddDays = function(date,addDays) {
     var someFormattedDate = mm + '/' + dd + '/' + y;
     return someFormattedDate;
 }
+
+// compares to objects based of a field name. 
+module.exports.compare = function(A,B,fieldname){
+         
+        var itemsArray = {missing:[],added:[],both:[]};
+       
+        if( (B!=undefined) &&  B.length>0  && A.length>0){
+            var data = {missing:[],added:[],both:[]};
+            data.added = _.difference(_.pluck(B,fieldname),_.pluck(A,fieldname));
+            data.both = _.intersection(_.pluck(A,fieldname),_.pluck(B,fieldname));
+            data.missing = _.difference(_.pluck(A.items,fieldname),_.pluck(B,fieldname));
+            itemsArray.added =  _.filter(B,function(obj){   return data.added.indexOf(obj[fieldname])>-1       });
+            itemsArray.both =  _.filter(B,function(obj){   return data.both.indexOf(obj[fieldname])>-1       });
+            itemsArray.missing =  _.filter(A,function(obj){   return data.missing.indexOf(obj[fieldname])>-1       });
+          
+        }
+        else{
+            itemsArray.missing = A;
+           
+        }
+        return itemsArray;
+}
+   

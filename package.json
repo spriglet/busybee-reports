@@ -20,7 +20,17 @@
     "jquery": "2.2.3",
     "mathjs": "*",
     "object-merge": "2.5.1",
-    "karma-sauce-launcher":"*"
+    "diff": "2.2.3",
+    "array-difference": "0.0.1",
+    "karma-sauce-launcher":"*",
+    "json-query":"*",
+    "spahql":"*",
+    "fast-json-patch":"*",
+    "jsonpath-plus":"*",
+    "deep-diff":"*",
+    "array-difference":"*",
+    "array-compare":"*",
+    "console.table":"*"
   },
   "devDependencies": {
     "browserify": "10.2.3",
