@@ -122,7 +122,7 @@ var prepswquery = function(branch,schemas,url,desiredfields){
             return json;
         }
       
-        
+        // 
         function seperate_by_sale_status(data){
             /*
                This functions takes a group of actual sales and seperates and determines which items are missing from the completed sale. 
