@@ -134,7 +134,7 @@ var prepswquery = function(branch,schemas,url,desiredfields){
             actualsaleid.forEach(function(saleid,index){    
                
                 var adjustedSale = _.filter(records, function(sale){ return sale.ACTUALSALEID==saleid && sale.STATUS=="Adjusted"; });
-                var completedSale = _.filter(records, function(sale){ return sale.ACTUALSALEID==saleid && sale.STATUS.indexOf('C:')>-1; });
+                var completedSale = _.filter(records, function(sale){ return sale.ACTUALSALEID==saleid && ( sale.STATUS.indexOf('C:')>-1 || sale.STATUS.indexOf('I:')>-1 ) ; });
                 var A = []; 
                 var B = [];
                 if(completedSale.length!=0)
