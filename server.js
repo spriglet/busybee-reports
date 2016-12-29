@@ -5,11 +5,9 @@ var superagent = require('superagent');
 var wagner = require('wagner-core');
 var app = express();
 
-//app.set('port', (process.env.PORT || 8081));
+app.set('port', (process.env.PORT || 8081));
 
-app.listen(process.env.PORT || 8081, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+
 
 // client files are stored in the client folder 
 app.use(express.static(__dirname + '/public'));
