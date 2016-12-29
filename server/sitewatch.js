@@ -132,9 +132,9 @@ var prepswquery = function(branch,schemas,url,desiredfields){
             var actualsaleid = _.unique( _.pluck(records,"ACTUALSALEID") );                 
             var modSales = [];
             actualsaleid.forEach(function(saleid,index){    
-                // || sale.STATUS.indexOf('I:')>-1
+                // 
                 var adjustedSale = _.filter(records, function(sale){ return sale.ACTUALSALEID==saleid && sale.STATUS=="Adjusted"; });
-                var completedSale = _.filter(records, function(sale){ return sale.ACTUALSALEID==saleid && ( sale.STATUS.indexOf('C:')>-1 ) ; });
+                var completedSale = _.filter(records, function(sale){ return sale.ACTUALSALEID==saleid && ( sale.STATUS.indexOf('C:')>-1 || sale.STATUS.indexOf('I:')>-1 ) ; });
                 var A = []; 
                 var B = [];
                 /*
