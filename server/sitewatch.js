@@ -137,21 +137,30 @@ var prepswquery = function(branch,schemas,url,desiredfields){
                 var completedSale = _.filter(records, function(sale){ return sale.ACTUALSALEID==saleid && ( sale.STATUS.indexOf('C:')>-1 || sale.STATUS.indexOf('I:')>-1 ) ; });
                 var A = []; 
                 var B = [];
-                /*
+                
                 if(completedSale.length!=0)
                   B =  completedSale[0].items;
                 if(adjustedSale.length!=0)  
                   A = adjustedSale[0].items;  
-                */
+            
+            
                 if(completedSale.length!=0 && adjustedSale.length!=0 ){
-                    B =  completedSale[0].items;
-                    A = adjustedSale[0].items;  
+              
+                    //B =  completedSale[0].items;
+                    //A = adjustedSale[0].items;  
                     var salesData =   basic.compare(A,B,"NAME");
                     var added =  _.map(salesData.added,function(obj){ obj.type='A'; obj.SALEID=saleid; obj.ACTUALSALEID=saleid; return obj;  }   )   ;
                     var missing =  _.map(salesData.missing,function(obj){ obj.type='M'; obj.SALEID=saleid; obj.ACTUALSALEID=saleid; return obj;  }   )   ;
                     var both =  _.map(salesData.both,function(obj){ obj.type='R'; obj.SALEID=saleid; obj.ACTUALSALEID=saleid; return obj;  }   )   ;
                     modSales =  modSales.concat(added,missing,both);
-                }      
+                }else if(completedSale.length!=0 && adjustedSale.length==0 ){
+                
+                    var salesData =   basic.compare([],B,"NAME");
+                    var added =  _.map(salesData.added,function(obj){ obj.type='A'; obj.SALEID=saleid; obj.ACTUALSALEID=saleid; return obj;  }   )   ;
+                   
+                    modSales =  modSales.concat(added,[],[]); 
+                    
+                }    
              
                
             });

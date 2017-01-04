@@ -20,7 +20,8 @@ module.exports.compare = function(A,B,fieldname){
          
         var itemsArray = {missing:[],added:[],both:[]};
        
-        if( (B!=undefined) &&  B.length>0  && A.length>0){
+        //lif( (B!=undefined) &&  B.length>0  && A.length>0){
+        if( (B!=undefined) &&  B.length>0){
             var data = {missing:[],added:[],both:[]};
             data.added = _.difference(_.pluck(B,fieldname),_.pluck(A,fieldname));
             data.both = _.intersection(_.pluck(A,fieldname),_.pluck(B,fieldname));
