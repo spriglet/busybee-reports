@@ -4,16 +4,17 @@
 <h4>To:{{startdate | date:'MM/dd/yyyy'}} From:{{enddate | date:'MM/dd/yyyy'}}</h4>
 <input type="image" src="assets/img/csv-icon.jpg" alt="Submit" export-to-csv>
  <table border='1' style='md-primary'>
- <tr><td>&nbsp;</td><td>Employee Sale Count:</td><td>{{ employee_carcount }}</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Item Sale Count :  </td><td>{{item_carcount}}</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Total Sale Count :  </td><td>{{item_carcount + employee_carcount}}</td>
- <td>Total</td>
- </tr>
+ <tr><td>Total Sale Count :  </td><td>{{item_carcount + employee_carcount}}</td> <td>Total</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td> <td>Employee Sale Count:</td><td>{{ employee_carcount }}</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Item Sale Count :  </td><td>{{item_carcount}}</td>
+ <td>&nbsp;</td></tr>
  <tbody ng-repeat="data in rpt ">
-      <tr>
-        <td>{{data.report_category}}</td><td>Name</td><td>quantity</td><td>Amount</td><td>missing</td><td>missing amount</td><td>added</td><td>added amount</td><td>Name</td><td>quantity</td><td>Amount</td><td>missing</td><td>missing amount</td><td>added</td><td>added amount</td><td>Name</td><td>quantity</td><td>amount</td> 
+      <tr><td>Name</td><td>quantity</td><td>amount</td> 
+        <td>{{data.report_category}}</td><td>Name</td><td>quantity</td><td>Amount</td><td>missing</td><td>missing amount</td><td>added</td><td>added amount</td><td>Name</td><td>quantity</td><td>Amount</td><td>missing</td><td>missing amount</td><td>added</td><td>added amount</td>
        
       </tr>
       <tr ng-repeat="(key,item) in data.items">
-        
+         <td>{{item.name}}</td><td>{{item.employee_items[0].quantity + item.item_items[0].quantity + item.item_items[0].added_quantity + item.employee_items[0].added_quantity}}
+        </td><td>{{(item.employee_items[0].amount + item.item_items[0].amount) +item.item_items[0].added_amount +item.employee_items[0].added_amount  | currency }}</td>
         <td>&nbsp;</td><td>{{item.name}}</td><td>{{item.employee_items[0].quantity}}</td><td>{{item.employee_items[0].amount | currency }}</td>
          <td>{{item.employee_items[0].missing_quantity}}</td><td>{{item.employee_items[0].missing_amount | currency }}</td>
          <td>{{item.employee_items[0].added_quantity}}</td><td>{{item.employee_items[0].added_amount | currency }}</td>
@@ -21,8 +22,7 @@
         <td>{{item.name}}</td><td>{{item.item_items[0].quantity}}</td><td>{{item.item_items[0].amount | currency }}</td>
           <td>{{item.item_items[0].missing_quantity}}</td><td>{{item.item_items[0].missing_amount | currency }}</td>
          <td>{{item.item_items[0].added_quantity}}</td><td>{{item.item_items[0].added_amount | currency }}</td>
-        <td>{{item.name}}</td><td>{{item.employee_items[0].quantity + item.item_items[0].quantity + item.item_items[0].added_quantity + item.employee_items[0].added_quantity}}
-        </td><td>{{(item.employee_items[0].amount + item.item_items[0].amount) +item.item_items[0].added_amount +item.employee_items[0].added_amount  | currency }}</td>
+        
         
       </tr>
   </tbody>
