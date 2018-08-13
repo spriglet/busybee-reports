@@ -22,7 +22,7 @@ module.exports = function(wagner,app) {
    };
   // builds the sitewatch REST API 
   var swdata = function(name){       
-       return function(data,json){  
+       return function(data,json){   
           groupby(json,name);
        }
   }
@@ -249,7 +249,6 @@ wagner.factory('sitewatch_sale_item_facts',function(){
                     path : '/index.php'+sitewatchURL, // the rest of the url with parameters if needed
                     method : 'GET' // do GET
             }; 
-
              curl(options,function(data){
                              if(!data==false){
                                 console.log(data)

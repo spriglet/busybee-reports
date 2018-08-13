@@ -196,7 +196,7 @@ exports.employees = function($scope,employeeList,itemList){
        $scope.items = response.data;
          var empname = $scope.employee.NAME;
          var comma_location = empname.indexOf(',');
-         empname = empname.toString().substring(comma_location+1 )  + " "+ empname.toString().substring(0,comma_location)
+         empname = empname.toString().substring(comma_location+1 ).replace(/\s/g,'')  + " "+ empname.toString().substring(0,comma_location).replace(/\s/g,'');
          $scope.item_objid = findemployeeitem(empname,$scope.items);
          
     });
@@ -243,7 +243,7 @@ exports.exportToCsv = function($){
 	        		var rowData = table.rows[i].cells;
 	        		for(var j=0; j<rowData.length;j++){
 	        	
-	        			csvString = csvString +'"'+ rowData[j].innerHTML.toString().replace(/&nbsp;/g, '')+'"'+ ',';
+	        			csvString = csvString +'"'+ rowData[j].innerHTML.toString().replace(/&nbsp;/g, '').trim()+'"'+ ',';
 	        		}
 	        		csvString = csvString.substring(0,csvString.length - 1);
 	        		csvString = csvString + "\n";

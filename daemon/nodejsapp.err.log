@@ -1,0 +1,464 @@
+undefined:1
+ [{"SALEID":12384299,"OBJID":"74163615744","ACTUALSALEID":null,"STATUS":"C:P","NAME":"Karen Stokeling","QTY":1,"AMT":0,"NAME_01":"Employee Codes"},{"SALEID":12384299,"OBJID":"74163615744","ACTUALSALEID":null,"STATUS":"C:P","NAME":"UWP Economy Wash","QTY":1,"AMT":19.99,"NAME_01":"UWP Sold"},{"SALEID":12384299,"OBJID":"74163615744","ACTUALSALEID":null,"STATUS":"C:P","NAME":"Visa \/ MC","QTY":1,"AMT":-19.99,"NAME_01":"Credit Card"},{"SALEID":12384482,"OBJID":"14175608832","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Conf Full Serv","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12384482,"OBJID":"14175608832","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Pers Svc Light","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12384482,"OBJID":"14175608832","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"Bumper to Bumper","QTY":1,"AMT":199,"NAME_01":"Exterior Detail"},{"SALEID":12384482,"OBJID":"14175608832","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"Bumper to Bumper Wsh","QTY":1,"AMT":0,"NAM
+
+SyntaxError: Unexpected token S
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:327:35
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":12418603,"OBJID":"52116795648","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"Stephen Howard","QTY":1,"AMT":0,"NAME_01":"Employee Codes"},{"SALEID":12418603,"OBJID":"52116795648","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP $8 CC Sold","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":12418603,"OBJID":"52116795648","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP Basic Clean Wash","QTY":1,"AMT":24.99,"NAME_01":"UWP Sold"},{"SALEID":12418603,"OBJID":"52116795648","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"_$8 Wash","QTY":1,"AMT":8,"NAME_01":"Exterior Washes"},{"SALEID":12418603,"OBJID":"52116795648","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"$8 Wash SVC-JMK\/JMJ","QTY":1,"AMT":0,"NAME_01":"Exterior Wash SVC"},{"SALEID":12418603,"OBJID":"52116795648","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"-Conf Basic","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12418603,"OBJID":"52116795648","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"-Tri Color","QTY":1,"AMT":0,"NAME_01":"Package Se
+
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:327:35
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":33010848,"OBJID":"13030447873","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"Customer Promo Pkg.","QTY":1,"AMT":0,"NAME_01":"Wash LPM Headers"},{"SALEID":33010848,"OBJID":"13030447873","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"ARM Rdm Pkg KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":33010848,"OBJID":"13030447873","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP $5 Wash KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":33010848,"OBJID":"13030447873","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP Economy Rdm","QTY":1,"AMT":-5,"NAME_01":"UWP Redeemed"},{"SALEID":33010848,"OBJID":"13030447873","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"placeholder","QTY":1,"AMT":0,"NAME_01":"Non-Reported Items"},{"SALEID":33010848,"OBJID":"13030447873","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"_$5 Wash","QTY":1,"AMT":5,"NAME_01":"Exterior Washes"},{"SALEID":33010848,"OBJID":"13030447873","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"$5 Wash SVC-JMJ\/JMK","QTY":1,"AMT":0,"NAME_01":"Exter
+
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":12467987,"OBJID":"71058258432","ACTUALSALEID":null,"STATUS":"C:PWDX","NAME":"Protecting Wash","QTY":1,"AMT":11.22,"NAME_01":"Exterior Washes"},{"SALEID":12467987,"OBJID":"71058258432","ACTUALSALEID":null,"STATUS":"C:PWDX","NAME":"Protecting Wash SVC","QTY":1,"AMT":0,"NAME_01":"Exterior Wash SVC"},{"SALEID":12467987,"OBJID":"71058258432","ACTUALSALEID":null,"STATUS":"C:PWDX","NAME":"-Tri Color","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12467987,"OBJID":"71058258432","ACTUALSALEID":null,"STATUS":"C:PWDX","NAME":"-WTA","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12467987,"OBJID":"71058258432","ACTUALSALEID":null,"STATUS":"C:PWDX","NAME":"-CTA2","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12467987,"OBJID":"71058258432","ACTUALSALEID":null,"STATUS":"C:PWDX","NAME":"-Rust Inhibitor","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12467987,"OBJID":"71058258432","ACTUALSALEID":null,"STATUS":"C:PWDX","NAME":"-Undercarriage","QTY":1,"AMT":0,"NAME_0
+
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:327:35
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":33059010,"OBJID":"21891825665","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"Customer Promo Pkg.","QTY":1,"AMT":0,"NAME_01":"Wash LPM Headers"},{"SALEID":33059010,"OBJID":"21891825665","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"ARM Rdm Pkg KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":33059010,"OBJID":"21891825665","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP $8 Wash KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":33059010,"OBJID":"21891825665","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP Basic Clean Rdm","QTY":1,"AMT":-8,"NAME_01":"UWP Redeemed"},{"SALEID":33059010,"OBJID":"21891825665","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"placeholder","QTY":1,"AMT":0,"NAME_01":"Non-Reported Items"},{"SALEID":33059010,"OBJID":"21891825665","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"_$8 Wash","QTY":1,"AMT":8,"NAME_01":"Exterior Washes"},{"SALEID":33059010,"OBJID":"21891825665","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"$8 Wash SVC-JMK","QTY":1,"AMT":0,"NAME_01":"Exteri
+
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":33069992,"OBJID":"62611542017","ACTUALSALEID":null,"STATUS":"C:PWX","NAME":"Full Service Upgrade","QTY":1,"AMT":12,"NAME_01":"Extra Services"},{"SALEID":33069992,"OBJID":"62611542017","ACTUALSALEID":null,"STATUS":"C:PWX","NAME":"Basic Clean Taxed","QTY":1,"AMT":8,"NAME_01":"Exterior Washes"},{"SALEID":33069992,"OBJID":"62611542017","ACTUALSALEID":null,"STATUS":"C:PWX","NAME":"Basic Clean SVC","QTY":1,"AMT":0,"NAME_01":"Exterior Wash SVC"},{"SALEID":33069992,"OBJID":"62611542017","ACTUALSALEID":null,"STATUS":"C:PWX","NAME":"-Busy Blaster","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":33069992,"OBJID":"62611542017","ACTUALSALEID":null,"STATUS":"C:PWX","NAME":"-CTA2","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":33069992,"OBJID":"62611542017","ACTUALSALEID":null,"STATUS":"C:PWX","NAME":"-Pend RainBar","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":33069992,"OBJID":"62611542017","ACTUALSALEID":null,"STATUS":"C:PWX","NAME":"-Tri Color","QTY":1,"AMT":0,"NAME_01
+
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:327:35
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":12489552,"OBJID":"52471542272","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"Ultimate HoneyCoat","QTY":1,"AMT":14.96,"NAME_01":"Exterior Washes"},{"SALEID":12489552,"OBJID":"52471542272","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"Ult. HoneyCoat SVC","QTY":1,"AMT":0,"NAME_01":"Exterior Wash SVC"},{"SALEID":12489552,"OBJID":"52471542272","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-CTA2","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12489552,"OBJID":"52471542272","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Undercarriage","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12489552,"OBJID":"52471542272","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Rust Inhibitor","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12489552,"OBJID":"52471542272","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Busy Blaster","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":12489552,"OBJID":"52471542272","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Tire Shine","QTY":1,"AMT":0,"N
+
+SyntaxError: Unexpected token A
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:327:35
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":33099624,"OBJID":"60258537729","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"Ultimate HoneyCoat","QTY":1,"AMT":14.96,"NAME_01":"Exterior Washes"},{"SALEID":33099624,"OBJID":"60258537729","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"Ult. HoneyCoat SVC","QTY":1,"AMT":0,"NAME_01":"Exterior Wash SVC"},{"SALEID":33099624,"OBJID":"60258537729","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-CTA2","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":33099624,"OBJID":"60258537729","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Rust Inhibitor","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":33099624,"OBJID":"60258537729","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Busy Blaster","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":33099624,"OBJID":"60258537729","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Tire Shine","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":33099624,"OBJID":"60258537729","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Conf Honey","QTY":1,"AMT":0,"NAME
+
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:327:35
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":33105053,"OBJID":"70614332673","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"Customer Promo Pkg.","QTY":1,"AMT":0,"NAME_01":"Wash LPM Headers"},{"SALEID":33105053,"OBJID":"70614332673","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"ARM Rdm Pkg KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":33105053,"OBJID":"70614332673","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP $8 Wash KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":33105053,"OBJID":"70614332673","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP Basic Clean Rdm","QTY":1,"AMT":-8,"NAME_01":"UWP Redeemed"},{"SALEID":33105053,"OBJID":"70614332673","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"placeholder","QTY":1,"AMT":0,"NAME_01":"Non-Reported Items"},{"SALEID":33105053,"OBJID":"70614332673","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"_$8 Wash","QTY":1,"AMT":8,"NAME_01":"Exterior Washes"},{"SALEID":33105053,"OBJID":"70614332673","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"$8 Wash SVC-JMK","QTY":1,"AMT":0,"NAME_01":"Exteri
+
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":33131889,"OBJID":"42373056769","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"Customer Promo Pkg.","QTY":1,"AMT":0,"NAME_01":"Wash LPM Headers"},{"SALEID":33131889,"OBJID":"42373056769","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"ARM Rdm Pkg KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":33131889,"OBJID":"42373056769","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP $5 Wash KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":33131889,"OBJID":"42373056769","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP Economy Rdm","QTY":1,"AMT":-5,"NAME_01":"UWP Redeemed"},{"SALEID":33131889,"OBJID":"42373056769","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"placeholder","QTY":1,"AMT":0,"NAME_01":"Non-Reported Items"},{"SALEID":33131889,"OBJID":"42373056769","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"_$5 Wash","QTY":1,"AMT":5,"NAME_01":"Exterior Washes"},{"SALEID":33131889,"OBJID":"42373056769","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"$5 Wash SVC-JMJ\/JMK","QTY":1,"AMT":0,"NAME_01":"Exter
+
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":2100326478,"OBJID":"31884172413","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"Customer Promo Pkg.","QTY":1,"AMT":0,"NAME_01":"Wash LPM Headers"},{"SALEID":2100326478,"OBJID":"31884172413","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"ARM Rdm Pkg KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":2100326478,"OBJID":"31884172413","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP $12 Wash KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":2100326478,"OBJID":"31884172413","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP Protecting Rdm","QTY":1,"AMT":-11.22,"NAME_01":"UWP Redeemed"},{"SALEID":2100326478,"OBJID":"31884172413","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"placeholder","QTY":1,"AMT":0,"NAME_01":"Non-Reported Items"},{"SALEID":2100326478,"OBJID":"31884172413","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"_$12 Wash","QTY":1,"AMT":11.22,"NAME_01":"Exterior Washes"},{"SALEID":2100326478,"OBJID":"31884172413","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"$12 Wash SVC-JMK","QTY":1,"
+
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":2100364457,"OBJID":"70078197117","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"Customer Promo Pkg.","QTY":1,"AMT":0,"NAME_01":"Wash LPM Headers"},{"SALEID":2100364457,"OBJID":"70078197117","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"ARM Rdm Pkg KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":2100364457,"OBJID":"70078197117","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP $12 Wash KPT","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":2100364457,"OBJID":"70078197117","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP Protecting Rdm","QTY":1,"AMT":-11.22,"NAME_01":"UWP Redeemed"},{"SALEID":2100364457,"OBJID":"70078197117","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"placeholder","QTY":1,"AMT":0,"NAME_01":"Non-Reported Items"},{"SALEID":2100364457,"OBJID":"70078197117","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"_$12 Wash","QTY":1,"AMT":11.22,"NAME_01":"Exterior Washes"},{"SALEID":2100364457,"OBJID":"70078197117","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"$12 Wash SVC-JMK","QTY":1,"
+
+SyntaxError: Unexpected token A
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":2100173557,"OBJID":"60452275837","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP $5 CC Sold","QTY":1,"AMT":0,"NAME_01":"UWP Headers"},{"SALEID":2100173557,"OBJID":"60452275837","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"UWP Economy Wash","QTY":1,"AMT":19.99,"NAME_01":"UWP Sold"},{"SALEID":2100173557,"OBJID":"60452275837","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"_$5 Wash","QTY":1,"AMT":5,"NAME_01":"Exterior Washes"},{"SALEID":2100173557,"OBJID":"60452275837","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"$5 Wash SVC-JMJ\/JMK","QTY":1,"AMT":0,"NAME_01":"Exterior Wash SVC"},{"SALEID":2100173557,"OBJID":"60452275837","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"-Wheelblaster","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":2100173557,"OBJID":"60452275837","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"-Conf Economy","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":2100173557,"OBJID":"60452275837","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"-CTA1","QTY":1,"AMT":0,"NAME_01":"Pa
+
+SyntaxError: Unexpected token S
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:327:35
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":2121673119,"OBJID":"30698316414","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"Protecting Wash","QTY":1,"AMT":11.22,"NAME_01":"Exterior Washes"},{"SALEID":2121673119,"OBJID":"30698316414","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"Protecting Wash SVC","QTY":1,"AMT":0,"NAME_01":"Exterior Wash SVC"},{"SALEID":2121673119,"OBJID":"30698316414","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Tri Color","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":2121673119,"OBJID":"30698316414","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Pend RainBar","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":2121673119,"OBJID":"30698316414","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-WTA","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":2121673119,"OBJID":"30698316414","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-CTA2","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":2121673119,"OBJID":"30698316414","ACTUALSALEID":null,"STATUS":"C:PWD","NAME":"-Rust Inhibitor","QTY":1,"AMT":0,"
+
+SyntaxError: Unexpected token S
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:327:35
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ <br />
+ ^
+
+SyntaxError: Unexpected token <
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:272:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":2121470118,"OBJID":"60279343998","ACTUALSALEID":null,"STATUS":"C:P","NAME":"Stock Drawer","QTY":1,"AMT":200,"NAME_01":"CashChange"},{"SALEID":2121470118,"OBJID":"60279343998","ACTUALSALEID":null,"STATUS":"C:P","NAME":"Cash","QTY":1,"AMT":-200,"NAME_01":"Cash"},{"SALEID":2121470121,"OBJID":"40279540606","ACTUALSALEID":null,"STATUS":"C:P","NAME":"Stock Drawer","QTY":1,"AMT":200,"NAME_01":"CashChange"},{"SALEID":2121470121,"OBJID":"40279540606","ACTUALSALEID":null,"STATUS":"C:P","NAME":"Cash","QTY":1,"AMT":-200,"NAME_01":"Cash"},{"SALEID":2121470120,"OBJID":"90279475070","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"Basic Clean","QTY":1,"AMT":8,"NAME_01":"Exterior Washes"},{"SALEID":2121470120,"OBJID":"90279475070","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"Basic Clean SVC","QTY":1,"AMT":0,"NAME_01":"Exterior Wash SVC"},{"SALEID":2121470120,"OBJID":"90279475070","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"-Busy Blaster","QTY":1,"AMT":0,"NAME_01":"Package Services"},{"SALEID":2121470120,"
+
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:273:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
+undefined:1
+ [{"SALEID":2121682984,"OBJID":"61344829054","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"Customer Promo Pkg.","QTY":1,"AMT":0,"NAME_01":"Wash LPM Headers"},{"SALEID":2121682984,"OBJID":"61344829054","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"ARM Rdm Pkg KPT","QTY":1,"AMT":0,"NAME_01":"FastPass Headers"},{"SALEID":2121682984,"OBJID":"61344829054","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"FP Basic Wash KPT","QTY":1,"AMT":0,"NAME_01":"FastPass Headers"},{"SALEID":2121682984,"OBJID":"61344829054","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"FP Basic Clean Rdm","QTY":1,"AMT":-8,"NAME_01":"FastPass Redeemed"},{"SALEID":2121682984,"OBJID":"61344829054","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"placeholder","QTY":1,"AMT":0,"NAME_01":"Non-Reported Items"},{"SALEID":2121682984,"OBJID":"61344829054","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"_Basic wash","QTY":1,"AMT":8,"NAME_01":"Redeemed Washes"},{"SALEID":2121682984,"OBJID":"61344829054","ACTUALSALEID":null,"STATUS":"C:PW","NAME":"BasicWash svc-jmk
+
+SyntaxError: Unexpected token A
+    at Object.parse (native)
+    at getSeperatedSaleStatus (C:\Busybee-reports\busybee-reports\server\sitewatch.js:173:42)
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:273:30
+    at C:\Busybee-reports\busybee-reports\server\sitewatch.js:90:12
+    at IncomingMessage.<anonymous> (C:\Busybee-reports\busybee-reports\server\curl.js:13:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)
